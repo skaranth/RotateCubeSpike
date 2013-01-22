@@ -15,12 +15,7 @@
 		3D5622F816AECF3500ECB73D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D5622F616AECF3500ECB73D /* InfoPlist.strings */; };
 		3D5622FA16AECF3500ECB73D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5622F916AECF3500ECB73D /* main.m */; };
 		3D5622FE16AECF3500ECB73D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5622FD16AECF3500ECB73D /* AppDelegate.m */; };
-		3D56230016AECF3500ECB73D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5622FF16AECF3500ECB73D /* Default.png */; };
-		3D56230216AECF3500ECB73D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D56230116AECF3500ECB73D /* Default@2x.png */; };
-		3D56230416AECF3500ECB73D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D56230316AECF3500ECB73D /* Default-568h@2x.png */; };
 		3D56230716AECF3500ECB73D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D56230516AECF3500ECB73D /* MainStoryboard.storyboard */; };
-		3D56230916AECF3500ECB73D /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D56230816AECF3500ECB73D /* Shader.fsh */; };
-		3D56230B16AECF3500ECB73D /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D56230A16AECF3500ECB73D /* Shader.vsh */; };
 		3D56230E16AECF3500ECB73D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D56230D16AECF3500ECB73D /* ViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -37,12 +32,7 @@
 		3D5622FB16AECF3500ECB73D /* RotateCubeSpike-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RotateCubeSpike-Prefix.pch"; sourceTree = "<group>"; };
 		3D5622FC16AECF3500ECB73D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D5622FD16AECF3500ECB73D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3D5622FF16AECF3500ECB73D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		3D56230116AECF3500ECB73D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		3D56230316AECF3500ECB73D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3D56230616AECF3500ECB73D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		3D56230816AECF3500ECB73D /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
-		3D56230A16AECF3500ECB73D /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		3D56230C16AECF3500ECB73D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3D56230D16AECF3500ECB73D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3D56231816AEE2EF00ECB73D /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
@@ -99,8 +89,6 @@
 				3D5622FC16AECF3500ECB73D /* AppDelegate.h */,
 				3D5622FD16AECF3500ECB73D /* AppDelegate.m */,
 				3D56230516AECF3500ECB73D /* MainStoryboard.storyboard */,
-				3D56230816AECF3500ECB73D /* Shader.fsh */,
-				3D56230A16AECF3500ECB73D /* Shader.vsh */,
 				3D56230C16AECF3500ECB73D /* ViewController.h */,
 				3D56230D16AECF3500ECB73D /* ViewController.m */,
 				3D5622F416AECF3500ECB73D /* Supporting Files */,
@@ -116,9 +104,6 @@
 				3D5622F616AECF3500ECB73D /* InfoPlist.strings */,
 				3D5622F916AECF3500ECB73D /* main.m */,
 				3D5622FB16AECF3500ECB73D /* RotateCubeSpike-Prefix.pch */,
-				3D5622FF16AECF3500ECB73D /* Default.png */,
-				3D56230116AECF3500ECB73D /* Default@2x.png */,
-				3D56230316AECF3500ECB73D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -175,12 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D5622F816AECF3500ECB73D /* InfoPlist.strings in Resources */,
-				3D56230016AECF3500ECB73D /* Default.png in Resources */,
-				3D56230216AECF3500ECB73D /* Default@2x.png in Resources */,
-				3D56230416AECF3500ECB73D /* Default-568h@2x.png in Resources */,
 				3D56230716AECF3500ECB73D /* MainStoryboard.storyboard in Resources */,
-				3D56230916AECF3500ECB73D /* Shader.fsh in Resources */,
-				3D56230B16AECF3500ECB73D /* Shader.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +290,7 @@
 				3D56231316AECF3500ECB73D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
