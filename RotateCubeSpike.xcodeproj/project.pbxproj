@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D5622EA16AECF3500ECB73D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5622E916AECF3500ECB73D /* UIKit.framework */; };
+		3D5622EC16AECF3500ECB73D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5622EB16AECF3500ECB73D /* Foundation.framework */; };
+		3D5622EE16AECF3500ECB73D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5622ED16AECF3500ECB73D /* CoreGraphics.framework */; };
+		3D5622F016AECF3500ECB73D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5622EF16AECF3500ECB73D /* GLKit.framework */; };
+		3D5622F216AECF3500ECB73D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5622F116AECF3500ECB73D /* OpenGLES.framework */; };
+		3D5622F816AECF3500ECB73D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D5622F616AECF3500ECB73D /* InfoPlist.strings */; };
+		3D5622FA16AECF3500ECB73D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5622F916AECF3500ECB73D /* main.m */; };
+		3D5622FE16AECF3500ECB73D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5622FD16AECF3500ECB73D /* AppDelegate.m */; };
+		3D56230016AECF3500ECB73D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5622FF16AECF3500ECB73D /* Default.png */; };
+		3D56230216AECF3500ECB73D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D56230116AECF3500ECB73D /* Default@2x.png */; };
+		3D56230416AECF3500ECB73D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D56230316AECF3500ECB73D /* Default-568h@2x.png */; };
+		3D56230716AECF3500ECB73D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D56230516AECF3500ECB73D /* MainStoryboard.storyboard */; };
+		3D56230916AECF3500ECB73D /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D56230816AECF3500ECB73D /* Shader.fsh */; };
+		3D56230B16AECF3500ECB73D /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3D56230A16AECF3500ECB73D /* Shader.vsh */; };
+		3D56230E16AECF3500ECB73D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D56230D16AECF3500ECB73D /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D5622E516AECF3500ECB73D /* RotateCubeSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotateCubeSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5622E916AECF3500ECB73D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D5622EB16AECF3500ECB73D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D5622ED16AECF3500ECB73D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D5622EF16AECF3500ECB73D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3D5622F116AECF3500ECB73D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3D5622F516AECF3500ECB73D /* RotateCubeSpike-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RotateCubeSpike-Info.plist"; sourceTree = "<group>"; };
+		3D5622F716AECF3500ECB73D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D5622F916AECF3500ECB73D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D5622FB16AECF3500ECB73D /* RotateCubeSpike-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RotateCubeSpike-Prefix.pch"; sourceTree = "<group>"; };
+		3D5622FC16AECF3500ECB73D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D5622FD16AECF3500ECB73D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D5622FF16AECF3500ECB73D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3D56230116AECF3500ECB73D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3D56230316AECF3500ECB73D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3D56230616AECF3500ECB73D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3D56230816AECF3500ECB73D /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		3D56230A16AECF3500ECB73D /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		3D56230C16AECF3500ECB73D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3D56230D16AECF3500ECB73D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D5622E216AECF3500ECB73D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5622EA16AECF3500ECB73D /* UIKit.framework in Frameworks */,
+				3D5622EC16AECF3500ECB73D /* Foundation.framework in Frameworks */,
+				3D5622EE16AECF3500ECB73D /* CoreGraphics.framework in Frameworks */,
+				3D5622F016AECF3500ECB73D /* GLKit.framework in Frameworks */,
+				3D5622F216AECF3500ECB73D /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D5622DA16AECF3500ECB73D = {
+			isa = PBXGroup;
+			children = (
+				3D5622F316AECF3500ECB73D /* RotateCubeSpike */,
+				3D5622E816AECF3500ECB73D /* Frameworks */,
+				3D5622E616AECF3500ECB73D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D5622E616AECF3500ECB73D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D5622E516AECF3500ECB73D /* RotateCubeSpike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D5622E816AECF3500ECB73D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D5622E916AECF3500ECB73D /* UIKit.framework */,
+				3D5622EB16AECF3500ECB73D /* Foundation.framework */,
+				3D5622ED16AECF3500ECB73D /* CoreGraphics.framework */,
+				3D5622EF16AECF3500ECB73D /* GLKit.framework */,
+				3D5622F116AECF3500ECB73D /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D5622F316AECF3500ECB73D /* RotateCubeSpike */ = {
+			isa = PBXGroup;
+			children = (
+				3D5622FC16AECF3500ECB73D /* AppDelegate.h */,
+				3D5622FD16AECF3500ECB73D /* AppDelegate.m */,
+				3D56230516AECF3500ECB73D /* MainStoryboard.storyboard */,
+				3D56230816AECF3500ECB73D /* Shader.fsh */,
+				3D56230A16AECF3500ECB73D /* Shader.vsh */,
+				3D56230C16AECF3500ECB73D /* ViewController.h */,
+				3D56230D16AECF3500ECB73D /* ViewController.m */,
+				3D5622F416AECF3500ECB73D /* Supporting Files */,
+			);
+			path = RotateCubeSpike;
+			sourceTree = "<group>";
+		};
+		3D5622F416AECF3500ECB73D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D5622F516AECF3500ECB73D /* RotateCubeSpike-Info.plist */,
+				3D5622F616AECF3500ECB73D /* InfoPlist.strings */,
+				3D5622F916AECF3500ECB73D /* main.m */,
+				3D5622FB16AECF3500ECB73D /* RotateCubeSpike-Prefix.pch */,
+				3D5622FF16AECF3500ECB73D /* Default.png */,
+				3D56230116AECF3500ECB73D /* Default@2x.png */,
+				3D56230316AECF3500ECB73D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D5622E416AECF3500ECB73D /* RotateCubeSpike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D56231116AECF3500ECB73D /* Build configuration list for PBXNativeTarget "RotateCubeSpike" */;
+			buildPhases = (
+				3D5622E116AECF3500ECB73D /* Sources */,
+				3D5622E216AECF3500ECB73D /* Frameworks */,
+				3D5622E316AECF3500ECB73D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RotateCubeSpike;
+			productName = RotateCubeSpike;
+			productReference = 3D5622E516AECF3500ECB73D /* RotateCubeSpike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D5622DC16AECF3500ECB73D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = skaranth;
+			};
+			buildConfigurationList = 3D5622DF16AECF3500ECB73D /* Build configuration list for PBXProject "RotateCubeSpike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D5622DA16AECF3500ECB73D;
+			productRefGroup = 3D5622E616AECF3500ECB73D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D5622E416AECF3500ECB73D /* RotateCubeSpike */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D5622E316AECF3500ECB73D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5622F816AECF3500ECB73D /* InfoPlist.strings in Resources */,
+				3D56230016AECF3500ECB73D /* Default.png in Resources */,
+				3D56230216AECF3500ECB73D /* Default@2x.png in Resources */,
+				3D56230416AECF3500ECB73D /* Default-568h@2x.png in Resources */,
+				3D56230716AECF3500ECB73D /* MainStoryboard.storyboard in Resources */,
+				3D56230916AECF3500ECB73D /* Shader.fsh in Resources */,
+				3D56230B16AECF3500ECB73D /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D5622E116AECF3500ECB73D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5622FA16AECF3500ECB73D /* main.m in Sources */,
+				3D5622FE16AECF3500ECB73D /* AppDelegate.m in Sources */,
+				3D56230E16AECF3500ECB73D /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D5622F616AECF3500ECB73D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D5622F716AECF3500ECB73D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D56230516AECF3500ECB73D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D56230616AECF3500ECB73D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D56230F16AECF3500ECB73D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D56231016AECF3500ECB73D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D56231216AECF3500ECB73D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RotateCubeSpike/RotateCubeSpike-Prefix.pch";
+				INFOPLIST_FILE = "RotateCubeSpike/RotateCubeSpike-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3D56231316AECF3500ECB73D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RotateCubeSpike/RotateCubeSpike-Prefix.pch";
+				INFOPLIST_FILE = "RotateCubeSpike/RotateCubeSpike-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D5622DF16AECF3500ECB73D /* Build configuration list for PBXProject "RotateCubeSpike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D56230F16AECF3500ECB73D /* Debug */,
+				3D56231016AECF3500ECB73D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D56231116AECF3500ECB73D /* Build configuration list for PBXNativeTarget "RotateCubeSpike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D56231216AECF3500ECB73D /* Debug */,
+				3D56231316AECF3500ECB73D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D5622DC16AECF3500ECB73D /* Project object */;
+}
