@@ -45,6 +45,7 @@
 		3D56230A16AECF3500ECB73D /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		3D56230C16AECF3500ECB73D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3D56230D16AECF3500ECB73D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D56231816AEE2EF00ECB73D /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 				3D56230C16AECF3500ECB73D /* ViewController.h */,
 				3D56230D16AECF3500ECB73D /* ViewController.m */,
 				3D5622F416AECF3500ECB73D /* Supporting Files */,
+				3D56231816AEE2EF00ECB73D /* Models.h */,
 			);
 			path = RotateCubeSpike;
 			sourceTree = "<group>";

@@ -1,21 +1,5 @@
 #import "ViewController.h"
-
-typedef struct {
-    float Position[3];
-    float Color[4];
-} Vertex;
-
-const Vertex Vertices[] = {
-    {{1, -1, 0}, {1, 0, 0, 1}},
-    {{1, 1, 0}, {0, 1, 0, 1}},
-    {{-1, 1, 0}, {0, 0, 1, 1}},
-    {{-1, -1, 0}, {0, 0, 0, 1}}
-};
-
-const GLubyte Indices[] = {
-    0, 1, 2,
-    2, 3, 0
-};
+#import "Models.h"
 
 @interface ViewController () {
     float _curRed;
@@ -43,6 +27,7 @@ const GLubyte Indices[] = {
     
     GLKView *view = (GLKView *)self.view;
     view.context = self.context;
+    view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     
     [self setupGL];
 }
@@ -125,13 +110,14 @@ const GLubyte Indices[] = {
     
     GLKMatrix4 modelViewMatrix = GLKMatrix4MakeTranslation(0.0f, 0.0f, -6.0f);
     _rotation += 90 * self.timeSinceLastUpdate;
-    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, GLKMathDegreesToRadians(_rotation), 0, 0, 1);
+
+    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, GLKMathDegreesToRadians(_rotation), 0, 1, 1);
     self.effect.transform.modelviewMatrix = modelViewMatrix;
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect{
-    glClearColor(_curRed, 0.0, 0.0, 1.0);
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glEnable(GL_DEPTH_TEST);
     [self.effect prepareToDraw];
     
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
