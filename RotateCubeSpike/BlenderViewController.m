@@ -1,20 +1,19 @@
-#import "ViewController.h"
-#import "Models.h"
-
-@interface ViewController () {
-    float _curRed;
-    BOOL _increasing;
+#import "BlenderViewController.h"
+#import "BlenderModels.h"
+@interface BlenderViewController()
+{
     GLuint _vertexBuffer;
     GLuint _indexBuffer;
     GLuint _vertexArray;
+    float _rotation;
     GLKMatrix4 _rotMatrix;
-
 }
 @property(strong, nonatomic) EAGLContext *context;
 @property(strong, nonatomic) GLKBaseEffect *effect;
 @end
 
-@implementation ViewController
+
+@implementation BlenderViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,31 +46,28 @@
     [self setupTexture];
 
 
-    [self setupBasicModelVertexArray];
+    [self setUpVertexData];
 
 
 }
 
-- (void)setupBasicModelVertexArray {
+- (void)setUpVertexData {
     glGenVertexArraysOES(1, &_vertexArray);
     glBindVertexArrayOES(_vertexArray);
 
 
     glGenBuffers(1, &_vertexBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(Vertices), Vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(BlenderVertices), BlenderVertices, GL_STATIC_DRAW);
 
-    glGenBuffers(1, &_indexBuffer);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _indexBuffer);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(Indices), Indices, GL_STATIC_DRAW);
+    glEnable(GL_DEPTH_TEST);
 
 
     glEnableVertexAttribArray(GLKVertexAttribPosition);
-    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (const GLvoid *) offsetof(Vertex, Position));
-    glEnableVertexAttribArray(GLKVertexAttribColor);
-    glVertexAttribPointer(GLKVertexAttribColor, 4, GL_FLOAT, GL_FALSE, sizeof(Vertex), (const GLvoid *) offsetof(Vertex, Color));
-    glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
-    glVertexAttribPointer(GLKVertexAttribTexCoord0, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (const GLvoid *) offsetof(Vertex, TexCoord));
+    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(vertexData), (const GLvoid *) offsetof(vertexData, vertex));
+
+    glEnableVertexAttribArray(GLKVertexAttribNormal);
+    glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, sizeof(vertexData), (const GLvoid *) offsetof(vertexData, normal));
 
     glBindVertexArrayOES(0);
 }
@@ -139,20 +135,6 @@
 #pragma mark - GLKView and GLKViewController delegate methods
 
 - (void)update {
-    if (_increasing) {
-        _curRed += 1.0 * self.timeSinceLastUpdate;
-    } else {
-        _curRed -= 1.0 * self.timeSinceLastUpdate;
-    }
-    if (_curRed >= 1.0) {
-        _curRed = 1.0;
-        _increasing = NO;
-    }
-    if (_curRed <= 0.0) {
-        _curRed = 0.0;
-        _increasing = YES;
-    }
-
 
     float aspect = fabsf(self.view.bounds.size.width / self.view.bounds.size.height);
     GLKMatrix4 projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(65.0f), aspect, 4.0f, 10.0f);
@@ -165,13 +147,13 @@
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
-    glClearColor(_curRed, 0.0, 0.0, 1.0);
+    glClearColor(0.0, 0.0, 0.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
 
     [self.effect prepareToDraw];
 
     glBindVertexArrayOES(_vertexArray);
-    glDrawElements(GL_TRIANGLES, sizeof(Indices)/sizeof(Indices[0]), GL_UNSIGNED_BYTE, 0);
+    glDrawArrays(GL_TRIANGLES, 0, sizeof(BlenderVertices) / sizeof(vertexData));
 
 }
 

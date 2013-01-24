@@ -18,6 +18,7 @@
 		3D56230716AECF3500ECB73D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D56230516AECF3500ECB73D /* MainStoryboard.storyboard */; };
 		3D56230E16AECF3500ECB73D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D56230D16AECF3500ECB73D /* ViewController.m */; };
 		725C337B61954F0412AE7BCA /* tile_floor.png in Resources */ = {isa = PBXBuildFile; fileRef = 725C3180883AF05FCAE5A21F /* tile_floor.png */; };
+		725C337C9EAA6E9DFD1F4BA1 /* BlenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725C3873EA645F315F5D110C /* BlenderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,9 @@
 		3D56230D16AECF3500ECB73D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3D56231816AEE2EF00ECB73D /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
 		725C3180883AF05FCAE5A21F /* tile_floor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile_floor.png; sourceTree = "<group>"; };
+		725C326A475E225869B0ED5F /* BlenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlenderViewController.h; sourceTree = "<group>"; };
+		725C35378FCECBDD470D6744 /* BlenderModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlenderModels.h; sourceTree = "<group>"; };
+		725C3873EA645F315F5D110C /* BlenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlenderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,9 @@
 				3D5622F416AECF3500ECB73D /* Supporting Files */,
 				3D56231816AEE2EF00ECB73D /* Models.h */,
 				725C3180883AF05FCAE5A21F /* tile_floor.png */,
+				725C35378FCECBDD470D6744 /* BlenderModels.h */,
+				725C3873EA645F315F5D110C /* BlenderViewController.m */,
+				725C326A475E225869B0ED5F /* BlenderViewController.h */,
 			);
 			path = RotateCubeSpike;
 			sourceTree = "<group>";
@@ -178,6 +185,7 @@
 				3D5622FA16AECF3500ECB73D /* main.m in Sources */,
 				3D5622FE16AECF3500ECB73D /* AppDelegate.m in Sources */,
 				3D56230E16AECF3500ECB73D /* ViewController.m in Sources */,
+				725C337C9EAA6E9DFD1F4BA1 /* BlenderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
