@@ -5,6 +5,7 @@
     GLuint _vertexBuffer;
     GLuint _indexBuffer;
     GLuint _vertexArray;
+    CGPoint _startPoint;
     float _rotation;
     GLKMatrix4 _rotMatrix;
 }
@@ -112,15 +113,22 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-//    self.paused = !self.paused;
+    UITouch *touch = [touches anyObject];
+    if(touch.phase==UITouchPhaseBegan){
+        _startPoint = [touch locationInView:self.view];
+    }
+
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
 
     UITouch * touch = [touches anyObject];
     CGPoint location = [touch locationInView:self.view];
-    CGPoint lastLoc = [touch previousLocationInView:self.view];
+//    CGPoint lastLoc = [touch previousLocationInView:self.view];
+    CGPoint lastLoc = _startPoint;
     CGPoint diff = CGPointMake(lastLoc.x - location.x, lastLoc.y - location.y);
+    
+    NSLog(@"Diff x= %f, y = %f", diff.x, diff.y);
 
     float rotX = -1 * GLKMathDegreesToRadians(diff.y / 2.0);
     float rotY = -1 * GLKMathDegreesToRadians(diff.x / 2.0);
@@ -129,6 +137,7 @@
     _rotMatrix = GLKMatrix4Rotate(_rotMatrix, rotX, xAxis.x, xAxis.y, xAxis.z);
     GLKVector3 yAxis = GLKVector3Make(0, 1, 0);
     _rotMatrix = GLKMatrix4Rotate(_rotMatrix, rotY, yAxis.x, yAxis.y, yAxis.z);
+    _startPoint = location;
 
 }
 
